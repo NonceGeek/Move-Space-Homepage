@@ -81,27 +81,16 @@
         <span v-for="text in footerTexts" :key="text">{{ text }}</span>
       </div>
     </div>
-    <!-- <p class="p-4 pb-2">
-      <select v-model="colorMode.preference"
-        class="border w-24 h-8 dark:bg-gray-900 dark:text-white dark:border-gray-700">
-        <option value="system">System</option>
-        <option value="light">Light</option>
-        <option value="dark">Dark</option>
-      </select>
-    </p>-->
   </div>
 </template>
 
 <script setup>
-// const colorMode = useColorMode()
-
 const links = [
   'AI Dashboard',
   'Scaffold Aptos Copilot',
   'MoveDID',
   'Docs',
 ]
-
 const buttons = [
   {
     text: 'testnet',
@@ -112,7 +101,6 @@ const buttons = [
     coloredBorder: false,
   },
 ]
-
 const footerTexts = [
   'Copyright © 2023 datAI. All rights reserved.',
   'Terms of Use & Privacy Policy',
