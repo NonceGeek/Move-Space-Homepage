@@ -13,6 +13,8 @@ const config: Config = {
         'second-gray': '#727272',
         'black-2': '#262626',
         'third-gray': '#858585',
+        'gray-4': '#C4C4C4',
+        'gray-5': '#CECECE',
         'blue-1': '#0075FF',
         'grdb': '#FF2DF7',
         'grdm': '#5200FF',

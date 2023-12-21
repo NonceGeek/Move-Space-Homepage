@@ -1,7 +1,7 @@
 <template>
   <div class="rounded-full p-px border bg-third-gray"
     :class="[coloredBorder && 'bg-gradient-to-r from-grdb via-grdm to-grde']">
-    <button class="rounded-full bg-[#fff] px-8 text-black-2 text-[15x] font-['Montserrat']"
+    <button class="rounded-full bg-white dark:bg-black px-8 text-black-2 dark:text-white text-[15x] font-['Montserrat']"
       :class="[high ? 'py-4' : 'py-2.5', uppercase && 'uppercase', classText]">
       {{ text }}
     </button>
