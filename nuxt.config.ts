@@ -5,7 +5,7 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
   ],
   colorMode: {
-    classSuffix: ''
+    classSuffix: '',
   },
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.css',
