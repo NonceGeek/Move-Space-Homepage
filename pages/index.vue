@@ -1,7 +1,10 @@
 <template>
   <div class="flex flex-col w-content mx-auto pt-9">
     <div class="header h-16 flex justify-between items-center">
+      <div class="flex items-center space-x-3">
       <img src="/img/logo.png" alt="logo" class="h-12" />
+        <img src="/img/logo-title.png" alt="logo" class="h-6 dark:brightness-0 dark:invert" />
+      </div>
       <div class="links flex items-center space-x-5 text-black-1 dark:text-white font-['Poppins'] text-[17px]">
         <a v-for="link in links" :key="link" href="/" class="flex items-center">
           <span>{{ link }}</span>
