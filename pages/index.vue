@@ -2,7 +2,7 @@
   <div class="flex flex-col w-content mx-auto pt-9">
     <div class="header h-16 flex justify-between items-center">
       <div class="flex items-center space-x-3">
-      <img src="/img/logo.png" alt="logo" class="h-12" />
+        <img src="/img/logo.png" alt="logo" class="h-12" />
         <img src="/img/logo-title.png" alt="logo" class="h-6 dark:brightness-0 dark:invert" />
       </div>
       <div class="links flex items-center space-x-5 text-black-1 dark:text-white font-['Poppins'] text-[17px]">
@@ -46,7 +46,7 @@
       <div class="w-full flex justify-start items-center space-x-60">
         <div class="w-[555px] flex flex-col space-y-6 items-start">
           <div class="w-full text-[20px] text-second-gray dark:text-white font-['Poppins']">
-            <span>datAI is a DataHouse powered by AI technology providing real time, </span>
+            <span>MOVESPACE is a DataHouse powered by AI technology providing real time, </span>
             <span class="text-blue-1 font-['Poppins'] font-bold">data-driven insights</span>
             <span> on your business and audience. The mission of DOML is to create the best experiences for companies
               through intelligent insights, powerful analytics and </span>
@@ -64,7 +64,7 @@
         <div class="title text-black-2 dark:text-white text-[40px] font-['Poppins'] font-semibold">INFRASTRUCTURE</div>
         <div class="w-[555px] flex flex-col space-y-6 items-start">
           <div class="w-full text-[20px] text-second-gray dark:text-white font-['Poppins']">
-            <span>datAI is a DataHouse powered by AI technology providing real time, </span>
+            <span>MOVESPACE is a DataHouse powered by AI technology providing real time, </span>
             <span class="text-blue-1 font-['Poppins'] font-bold">data-driven insights</span>
             <span> on your business and audience. The mission of DOML is to create the best experiences for companies
               through intelligent insights, powerful analytics and </span>
@@ -105,7 +105,7 @@ const buttons = [
   },
 ]
 const footerTexts = [
-  'Copyright © 2023 datAI. All rights reserved.',
+  'Copyright © 2023 MOVESPACE. All rights reserved.',
   'Terms of Use & Privacy Policy',
 ]
 </script>
