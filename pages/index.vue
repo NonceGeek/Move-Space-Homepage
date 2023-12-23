@@ -36,7 +36,7 @@
     <div class="mt-[72px]">
       <img class="mx-auto h-[30px] dark:brightness-0 dark:invert" src="/img/clients.png" alt="clients">
     </div>
-    <div class="mt-8 text-center text-third-gray dark:text-gray-5 text-[20px] font-['Poppins']">
+    <div class="mt-[26px] text-center text-third-gray dark:text-gray-5 text-[20px] font-['Poppins']">
       Trusted by and integrated with the world’s most ambitious teams
     </div>
     <div class="mt-40 mxau w-[1160px] flex flex-col items-center space-y-[142px]">
