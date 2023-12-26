@@ -45,13 +45,12 @@
     <div class="mt-40 mxau w-[1160px] flex flex-col items-center space-y-[142px]">
       <div class="w-full flex justify-start items-center space-x-60">
         <div class="w-[555px] flex flex-col space-y-6 items-start">
-          <div class="w-full text-[20px] text-second-gray dark:text-white font-['Poppins']">
-            <span>MOVESPACE is a DataHouse powered by AI technology providing real time, </span>
-            <span class="text-blue-1 font-['Poppins'] font-bold">data-driven insights</span>
-            <span> on your business and audience. The mission of DOML is to create the best experiences for companies
-              through intelligent insights, powerful analytics and </span>
-            <span class="text-blue-1 font-['Poppins'] font-bold">strategic execution</span>
-            <span>.</span>
+          <div class="w-full flex flex-col space-y-2 text-[20px] text-second-gray dark:text-white font-['Poppins']">
+            <span>MOVESPACE is an ecosystem of applications powered by the MoveSpace vector datahouse. We utilize
+              decentralized storage solutions including BNB Greenfield and Arweave to power on-chain data labeling, data
+              monetization, AI-powered search, AIGC & AI-based UGC, NFT, and gaming use cases.</span>
+            <span>Our team consists of Web 3 natives and veteran builders from Tencent, Huawei, Microsoft, Google, and
+              Netease, etc.</span>
           </div>
           <div class="w-[575px] p-2.5">
             <LinearLine />
@@ -61,15 +60,21 @@
         <div class="title text-black-2 dark:text-white text-[40px] font-['Poppins'] font-semibold">ABOUT US</div>
       </div>
       <div class="w-full flex justify-start items-center space-x-60">
-        <div class="title text-black-2 dark:text-white text-[40px] font-['Poppins'] font-semibold">INFRASTRUCTURE</div>
+        <div class="title text-black-2 dark:text-white text-[40px] font-['Poppins'] font-semibold">APPLICATIONS</div>
         <div class="w-[555px] flex flex-col space-y-6 items-start">
-          <div class="w-full text-[20px] text-second-gray dark:text-white font-['Poppins']">
-            <span>MOVESPACE is a DataHouse powered by AI technology providing real time, </span>
-            <span class="text-blue-1 font-['Poppins'] font-bold">data-driven insights</span>
-            <span> on your business and audience. The mission of DOML is to create the best experiences for companies
-              through intelligent insights, powerful analytics and </span>
-            <span class="text-blue-1 font-['Poppins'] font-bold">strategic execution</span>
-            <span>.</span>
+          <div class="w-full flex flex-col space-y-2 text-[20px] text-second-gray dark:text-white font-['Poppins']">
+            <span>The MoveSpace ecosystem is a set of applications built on MoveSpace’s vector datahouse.</span>
+            <ul class="list-disc">
+              <li>MoveSpace Data Explorer: a vector-data-powered search engine to power Web 3 native search, beginning
+                with Galxe & Bodhi.</li>
+              <li>MoveSpace Data Marketplace: a data publishing and marketplace platform built on BNBChain & BNB
+                Greenfield.</li>
+              <li>MoveSpace AI Dashboard: a multi-modal AIGC platform that allows users to upload data on-chain and
+                generate
+                AIGC based on their textual data and image data.</li>
+              <li>MoveSpace Data Labeling Platform: an on-chain data labeling platform for Large language models and
+                applications, built on BNBChain and BNB Greenfield.</li>
+            </ul>
           </div>
           <div class="w-[575px] p-2.5">
             <LinearLine />
