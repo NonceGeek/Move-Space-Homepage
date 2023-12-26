@@ -5,7 +5,7 @@
         <img src="/img/logo.png" alt="logo" class="h-12" />
         <img src="/img/logo-title.png" alt="logo" class="h-6 dark:brightness-0 dark:invert" />
       </div>
-      <div class="links flex items-center space-x-5 text-black-1 dark:text-white font-['Poppins'] text-[17px]">
+      <div class="links flex items-center space-x-5 text-black-1 dark:text-white font-['Poppins'] text-[14px]">
         <a v-for="link in links" :key="link" href="/" class="flex items-center">
           <span>{{ link }}</span>
           <img class="w-6 h-6 dark:brightness-0 dark:invert" src="~/assets/svg/down-select.svg" alt="select">
@@ -89,10 +89,10 @@
 
 <script setup>
 const links = [
-  'AI Dashboard',
-  'Scaffold Aptos Copilot',
-  'MoveDID',
-  'Docs',
+  'MoveSpace Data Explorer',
+  'MoveSpace Data Marketplace',
+  'MoveSpace AI Dashboard',
+  'MoveSpace Data Labeling Platform',
 ]
 const buttons = [
   {
