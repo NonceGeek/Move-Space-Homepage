@@ -6,9 +6,13 @@
         <img src="/img/logo-title.png" alt="logo" class="h-6 dark:brightness-0 dark:invert" />
       </div>
       <div class="links flex items-center space-x-5 text-black-1 dark:text-white font-['Poppins'] text-[14px]">
-        <a v-for="link in links" :key="link" class="flex items-center cursor-pointer">
+        <a v-for="link in links" :key="link" class="group relative flex items-center cursor-pointer">
           <span>{{ link }}</span>
           <img class="w-6 h-6 dark:brightness-0 dark:invert" src="~/assets/svg/down-select.svg" alt="select">
+          <p
+            class="hidden group-hover:block absolute -bottom-12 left-1/2 -translate-x-1/2 w-48 px-5 py-3 text-center truncate rounded-lg shadow-lg dark:shadow-none bg-white dark:bg-black-1 dark:text-white">
+            Coming soon
+          </p>
         </a>
         <div class="flex flex-col justify-center ml-3" @click="toggleColorMode">
           <input type="checkbox" name="light-switch" class="light-switch sr-only" />
