@@ -38,12 +38,10 @@
         <div class="texts flex flex-col space-y-6">
           <div class="titles flex flex-col space-y-9">
             <div class="flex flex-col space-y-4 text-black-1 dark:text-white">
-              <span class="w-[450px] text-[72px] leading-none font-['Poppins'] font-medium tracking-[0.6px]">AI-Powered
-                Datahouse</span>
-              <span class="w-[510px] text-[36px] leading-tight font-['Poppins'] capitalize">for on-chain
-                data labeling &
-                data
-                marketplace</span>
+              <span class="w-[450px] text-[72px] leading-none font-['Poppins'] font-medium tracking-[0.6px]">Web 3 AI
+                Powerhouse</span>
+              <span class="w-[510px] text-[36px] leading-tight font-['Poppins']">For Search, AIGC, Data
+                Marketplace, and Apps</span>
             </div>
             <LinearLine classText="w-[615px]" />
           </div>
