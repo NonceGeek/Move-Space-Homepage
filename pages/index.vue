@@ -76,7 +76,7 @@
           <div class="w-[575px] p-2.5">
             <LinearLine />
           </div>
-          <TheButton text="Learn more" :coloredBorder="true" />
+          <TheButton text="Learn more" :coloredBorder="true" @click="scrollToTop" />
         </div>
         <div class="title text-black-2 dark:text-white text-[40px] font-['Poppins'] font-semibold">ABOUT US</div>
       </div>
@@ -101,7 +101,7 @@
           <div class="w-[575px] p-2.5">
             <LinearLine />
           </div>
-          <TheButton text="Learn more" :coloredBorder="true" />
+          <TheButton text="Learn more" :coloredBorder="true" @click="scrollToTop" />
         </div>
       </div>
     </div>
@@ -143,6 +143,13 @@ const toggleColorMode = () => {
   } else {
     colorMode.preference = 'dark'
   }
+}
+
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  })
 }
 </script>
 
