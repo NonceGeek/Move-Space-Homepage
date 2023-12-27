@@ -63,7 +63,7 @@
     <div class="mt-[26px] text-center text-third-gray dark:text-gray-5 text-[20px] font-['Poppins']">
       Trusted by and integrated with the world’s most ambitious teams
     </div>
-    <div class="mt-40 mxau w-[1160px] flex flex-col items-center space-y-[142px]">
+    <div class="mt-40 mx-auto w-[1160px] flex flex-col items-center space-y-[142px]">
       <div class="w-full flex justify-start items-center space-x-60">
         <div class="w-[555px] flex flex-col space-y-6 items-start">
           <div class="w-full flex flex-col space-y-2 text-[20px] text-second-gray dark:text-white font-['Poppins']">
@@ -81,7 +81,8 @@
         <div class="title text-black-2 dark:text-white text-[40px] font-['Poppins'] font-semibold">ABOUT US</div>
       </div>
       <div class="w-full flex justify-start items-center space-x-60">
-        <div class="title text-black-2 dark:text-white text-[40px] font-['Poppins'] font-semibold">APPLICATIONS</div>
+        <div class="title w-[555px] text-black-2 dark:text-white text-[40px] font-['Poppins'] font-semibold">APPLICATIONS
+        </div>
         <div class="w-[555px] flex flex-col space-y-6 items-start">
           <div class="w-full flex flex-col space-y-2 text-[20px] text-second-gray dark:text-white font-['Poppins']">
             <span>The MoveSpace ecosystem is a set of applications built on MoveSpace’s vector datahouse.</span>
