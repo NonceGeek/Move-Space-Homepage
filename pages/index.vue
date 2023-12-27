@@ -54,7 +54,8 @@
         </div>
         <div class="buttons flex items-center space-x-8">
           <template v-for="button in buttons" :key="button">
-            <TheButton :text="button.text" :uppercase="true" :high="true" :coloredBorder="button.coloredBorder" />
+            <TheButton :text="button.text" :uppercase="true" :high="true" :coloredBorder="button.coloredBorder"
+              :change-text="true" />
           </template>
         </div>
       </div>
