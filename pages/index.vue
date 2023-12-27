@@ -54,7 +54,7 @@
         </div>
         <div class="buttons flex items-center space-x-8">
           <template v-for="button in buttons" :key="button">
-            <TheButton :text="button.text" :uppercase="true" :high="true" :coloredBorder="button.coloredBorder"
+            <TheButton :text="button.text" :uppercase="true" :high="true" :colored-border="button.coloredBorder"
               :change-text="true" />
           </template>
         </div>
@@ -80,7 +80,7 @@
           <div class="w-[575px] p-2.5">
             <LinearLine />
           </div>
-          <TheButton text="Learn more" :coloredBorder="true" @click="scrollToTop" />
+          <TheButton text="Learn more" :colored-border="true" @click="scrollToTop" />
         </div>
         <div class="title text-black-2 dark:text-white text-[40px] font-['Poppins'] font-semibold">ABOUT US</div>
       </div>
@@ -105,7 +105,7 @@
           <div class="w-[575px] p-2.5">
             <LinearLine />
           </div>
-          <TheButton text="Learn more" :coloredBorder="true" @click="scrollToTop" />
+          <TheButton text="Learn more" :colored-border="true" @click="scrollToTop" />
         </div>
       </div>
     </div>
