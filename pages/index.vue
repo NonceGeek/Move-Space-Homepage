@@ -47,7 +47,10 @@
             </div>
             <LinearLine classText="w-[615px]" />
           </div>
-          <div class="text-third-gray dark:text-gray-4 text-[21px]">Powered by BNB Greenfield</div>
+          <div class="flex items-center space-x-2 text-third-gray dark:text-gray-4 text-[21px]">
+            <span class="leading-8">Powered by BNB Greenfield</span>
+            <img class="w-8 h-8" src="/img/logo-bnb.png" alt="bnb">
+          </div>
         </div>
         <div class="buttons flex items-center space-x-8">
           <template v-for="button in buttons" :key="button">
