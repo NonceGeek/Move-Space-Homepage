@@ -17,11 +17,10 @@
         <div class="flex justify-center ml-2" @click="toggleColorMode">
           <input type="checkbox" name="light-switch" class="light-switch sr-only" />
           <label
-            class="relative w-[66px] h-[30px] p-[3px] bg-[#F0F2F5] dark:bg-[#2C2C2C] rounded-full after:content-[''] after:transition-transform after:duration-500 after:absolute after:dark:translate-x-[150%] after:w-6 after:h-6 after:p-[6px] after:rounded-full after:bg-gradient-to-r after:from-[#439DFF] after:to-[#6052FF] flex justify-between items-center cursor-pointer select-none"
+            class="relative h-[30px] p-[3px] bg-[#F0F2F5] dark:bg-[#2C2C2C] rounded-full after:content-[''] after:transition-transform after:duration-500 after:absolute after:dark:translate-x-full after:w-6 after:h-6 after:p-[6px] after:rounded-full after:bg-gradient-to-r after:from-[#439DFF] after:to-[#6052FF] flex items-center cursor-pointer select-none"
             for="light-switch">
             <img class="m-[6px] z-20 w-3 h-3" src="~/assets/svg/light-mode.svg" alt="light-mode">
-            <img class="m-[6px] z-20 w-3 h-3 dark:brightness-0 dark:invert" src="~/assets/svg/dark-mode.svg"
-              alt="dark-mode">
+            <img class="m-[6px] z-20 w-3 h-3" src="~/assets/svg/dark-mode.svg" alt="dark-mode">
             <span class="sr-only">Switch to light / dark version</span>
           </label>
         </div>
@@ -112,10 +111,10 @@
 
 <script setup>
 const links = [
-  'MoveSpace Data Explorer',
-  'MoveSpace Data Marketplace',
-  'MoveSpace AI Dashboard',
-  'MoveSpace Data Labeling Platform',
+  'Data Explorer',
+  'Data Marketplace',
+  'AI Dashboard',
+  'Data Labeling Platform',
 ]
 const buttons = [
   {
