@@ -5,7 +5,7 @@ const config: Config = {
   theme: {
     extend: {
       width: {
-        'content': '1440px',
+        'content': '1280px',
       },
       colors: {
         'black-1': '#1E1E2D',
