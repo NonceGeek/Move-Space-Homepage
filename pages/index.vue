@@ -1,9 +1,9 @@
 <template>
   <div class="flex flex-col w-content mx-auto pt-9">
     <div class="header h-16 flex justify-between items-center">
-      <div class="flex items-center space-x-3">
-        <img src="/img/logo.png" alt="logo" class="h-12" />
-        <img src="/img/logo-title.png" alt="logo" class="h-6 dark:brightness-0 dark:invert" />
+      <div class="flex items-center space-x-2">
+        <img src="/img/logo.png" alt="logo" class="h-10" />
+        <img src="/img/logo-title.png" alt="logo" class="h-5 dark:brightness-0 dark:invert" />
       </div>
       <div class="links flex items-center space-x-5 text-black-1 dark:text-white font-['Poppins'] text-[14px]">
         <a v-for="link in links" :key="link" class="group relative flex items-center cursor-pointer">
@@ -14,20 +14,14 @@
             Coming soon
           </p>
         </a>
-        <div class="flex flex-col justify-center ml-3" @click="toggleColorMode">
+        <div class="flex justify-center ml-2" @click="toggleColorMode">
           <input type="checkbox" name="light-switch" class="light-switch sr-only" />
-          <label class="relative cursor-pointer p-2" for="light-switch">
-            <svg class="dark:hidden" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-              <path class="fill-black-1"
-                d="M7 0h2v2H7zM12.88 1.637l1.414 1.415-1.415 1.413-1.413-1.414zM14 7h2v2h-2zM12.95 14.433l-1.414-1.413 1.413-1.415 1.415 1.414zM7 14h2v2H7zM2.98 14.364l-1.413-1.415 1.414-1.414 1.414 1.415zM0 7h2v2H0zM3.05 1.706 4.463 3.12 3.05 4.535 1.636 3.12z" />
-              <path class="fill-black-2" d="M8 4C5.8 4 4 5.8 4 8s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4Z" />
-            </svg>
-            <svg class="hidden dark:block" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-              <path class="fill-white"
-                d="M6.2 1C3.2 1.8 1 4.6 1 7.9 1 11.8 4.2 15 8.1 15c3.3 0 6-2.2 6.9-5.2C9.7 11.2 4.8 6.3 6.2 1Z" />
-              <path class="fill-white"
-                d="M12.5 5a.625.625 0 0 1-.625-.625 1.252 1.252 0 0 0-1.25-1.25.625.625 0 1 1 0-1.25 1.252 1.252 0 0 0 1.25-1.25.625.625 0 1 1 1.25 0c.001.69.56 1.249 1.25 1.25a.625.625 0 1 1 0 1.25c-.69.001-1.249.56-1.25 1.25A.625.625 0 0 1 12.5 5Z" />
-            </svg>
+          <label
+            class="relative w-[66px] h-[30px] p-[3px] bg-[#F0F2F5] dark:bg-[#2C2C2C] rounded-full after:content-[''] after:transition-transform after:duration-500 after:absolute after:dark:translate-x-[150%] after:w-6 after:h-6 after:p-[6px] after:rounded-full after:bg-gradient-to-r after:from-[#439DFF] after:to-[#6052FF] flex justify-between items-center cursor-pointer select-none"
+            for="light-switch">
+            <img class="m-[6px] z-20 w-3 h-3" src="~/assets/svg/light-mode.svg" alt="light-mode">
+            <img class="m-[6px] z-20 w-3 h-3 dark:brightness-0 dark:invert" src="~/assets/svg/dark-mode.svg"
+              alt="dark-mode">
             <span class="sr-only">Switch to light / dark version</span>
           </label>
         </div>
