@@ -9,6 +9,9 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
+  "dependencies": {
+    "@nuxtjs/color-mode": "^3.3.2"
+  },
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "@nuxtjs/color-mode": "^3.3.2",
