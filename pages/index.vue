@@ -126,8 +126,7 @@ const footerTexts = [
   'Terms of Use & Privacy Policy',
 ]
 
-const colorMode = useColorMode();
-colorMode.preference = 'dark';
+const colorMode = useColorMode('dark');
 const toggleColorMode = () => {
   if (colorMode.preference === 'dark') {
     colorMode.preference = 'light'
