@@ -6,14 +6,20 @@
         <img src="/img/logo-title.png" alt="logo" class="h-6 dark:brightness-0 dark:invert" />
       </div>
       <div class="links flex items-center space-x-5 text-black-1 dark:text-white font-['Poppins'] text-[17px]">
-        <a v-for="link in links" :key="link" class="group relative h-7 flex items-center cursor-pointer">
-          <span>{{ link }}</span>
-          <img class="w-6 h-6 dark:brightness-0 dark:invert" src="~/assets/svg/down-select.svg" alt="select">
-          <p
-            class="hidden group-hover:flex absolute -bottom-3 left-1/2 -translate-x-1/2 w-[57px] h-3 rounded-[2px] bg-[#FFDC02] justify-center items-center text-[8px] font-['Poppins']">
-            Coming soon
-          </p>
-        </a>
+        <template v-for="link in links" :key="link">
+          <a v-if="link.url" :href="link.url" class="relative h-7 flex items-center cursor-pointer hover:underline underline-offset-4">
+            <span>{{ link.title }}</span>
+            <img class="w-6 h-6 dark:brightness-0 dark:invert" src="~/assets/svg/down-select.svg" alt="select">
+          </a>
+          <a v-else class="group relative h-7 flex items-center cursor-pointer">
+            <span>{{ link.title }}</span>
+            <img class="w-6 h-6 dark:brightness-0 dark:invert" src="~/assets/svg/down-select.svg" alt="select">
+            <p
+              class="hidden group-hover:flex absolute -bottom-6 left-1/2 -translate-x-1/2 w-32 h-6 rounded-xl bg-[#FFDC02] justify-center items-center text-xs font-['Poppins'] dark:text-black">
+              Coming soon
+            </p>
+          </a>
+        </template>
         <div class="flex justify-center ml-2" @click="toggleColorMode">
           <input type="checkbox" name="light-switch" class="light-switch sr-only" />
           <label
@@ -84,8 +90,10 @@
               <li><b>MoveSpace Data Explorer:</b> an AI-powered search engine for on-chain and off-chain data.</li>
               <li><b>MoveSpace Data Marketplace:</b> a data publishing and marketplace platform built on BNBChain & BNB
                 Greenfield.</li>
-              <li><b>MoveSpace Review Platform:</b> a review-to-earn platform for everyone to earn while leaving a review and rating campaigns, NFTs, & events.</li>
-              <li><b>MoveSpace Data Labeling Platform:</b> an on-chain data labeling platform for LLMs and applications, built on BNBChain, opBNB and BNB Greenfield.</li>
+              <li><b>MoveSpace Review Platform:</b> a review-to-earn platform for everyone to earn while leaving a review
+                and rating campaigns, NFTs, & events.</li>
+              <li><b>MoveSpace Data Labeling Platform:</b> an on-chain data labeling platform for LLMs and applications,
+                built on BNBChain, opBNB and BNB Greenfield.</li>
             </ul>
           </div>
           <div class="w-[575px] p-2.5">
@@ -106,10 +114,22 @@
 
 <script setup>
 const links = [
-  'Data Explorer',
-  'Data Marketplace',
-  'Review & Earn',
-  'Label & Earn',
+  {
+    title: 'Data Explorer',
+    url: 'https://explorer.movespace.xyz/',
+  },
+  {
+    title: 'Data Marketplace',
+    url: '',
+  },
+  {
+    title: 'Review & Earn',
+    url: '',
+  },
+  {
+    title: 'Label & Earn',
+    url: '',
+  },
 ]
 const buttons = [
   {
@@ -143,5 +163,4 @@ const scrollToTop = () => {
 }
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
