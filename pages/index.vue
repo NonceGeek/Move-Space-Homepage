@@ -115,12 +115,8 @@
 <script setup>
 const links = [
   {
-    title: 'Data Explorer',
+    title: 'AI Data Explorer',
     url: 'https://explorer.movespace.xyz/',
-  },
-  {
-    title: 'Data Marketplace',
-    url: '',
   },
   {
     title: 'Review & Earn',
@@ -128,6 +124,10 @@ const links = [
   },
   {
     title: 'Label & Earn',
+    url: '',
+  },
+  {
+    title: 'Data Marketplace',
     url: '',
   },
 ]
