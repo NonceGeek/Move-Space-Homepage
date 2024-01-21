@@ -44,43 +44,40 @@
       </div>
       <img id="banner-right" class="w-[454px]" src="/img/cards.png" alt="cards">
     </div>
-    <div class="mt-40 mx-auto w-[1160px] flex flex-col items-center space-y-[142px]">
-      <div class="flex items-center justify-start w-full space-x-60">
-        <div class="w-[555px] flex flex-col space-y-6 items-start">
-          <div class="w-full flex flex-col space-y-2 text-[20px] text-second-gray dark:text-white">
-            <span>MOVESPACE is a Web 3 AI Powerhouse. We utilize
-              decentralized storage solutions including BNB Greenfield and Arweave to power on-chain data labeling, data
-              monetization, AI-powered search, AIGC & AI-based UGC, NFT, and gaming use cases.</span>
-            <span>Our team consists of Web 3 natives and veteran builders from Tencent, Huawei, Microsoft, Google, and
-              Netease, etc.</span>
-          </div>
-          <div class="w-[575px] p-2.5">
-            <LinearLine />
-          </div>
-          <TheButton text="Learn more" :colored-border="true" @click="scrollToTop" />
-        </div>
-        <div class="title text-black-2 dark:text-white text-[40px] font-semibold">ABOUT US</div>
+    <div class="flex flex-col mt-40">
+      <div class="w-full text-5xl font-medium text-center">Trending</div>
+      <div class="flex items-center justify-between w-full h-16 pt-6 text-second-gray">
+        <span class="text-3xl font-medium">NFTPrompt NFTs</span>
+        <span class="flex items-center space-x-3">
+          <span class="text-2xl font-semibold">View all</span>
+          <img class="w-6 h-6" src="/img/arrow-right.png" alt="arrow">
+        </span>
       </div>
-      <div class="flex items-center justify-start w-full space-x-60">
-        <div class="title w-[555px] text-black-2 dark:text-white text-[40px] font-semibold">APPLICATIONS
+      <div class="flex items-start justify-between mt-10 space-x-6">
+        <div class="flex">
+          <img class="w-full h-auto" src="/img/cards-1.png" alt="card">
         </div>
-        <div class="w-[555px] flex flex-col space-y-6 items-start">
-          <div class="w-full flex flex-col space-y-2 text-[20px] text-second-gray dark:text-white">
-            <ul class="list-disc">
-              <li><b>MoveSpace Data Explorer:</b> an AI-powered search engine for on-chain and off-chain data.</li>
-              <li><b>MoveSpace Data Marketplace:</b> a data publishing and marketplace platform built on BNBChain & BNB
-                Greenfield.</li>
-              <li><b>MoveSpace Review Platform:</b> a review-to-earn platform for everyone to earn while leaving a review
-                and rating campaigns, NFTs, & events.</li>
-              <li><b>MoveSpace Data Labeling Platform:</b> an on-chain data labeling platform for LLMs and applications,
-                built on BNBChain, opBNB and BNB Greenfield.</li>
-            </ul>
-          </div>
-          <div class="w-[575px] p-2.5">
-            <LinearLine />
-          </div>
-          <TheButton text="Learn more" :colored-border="true" @click="scrollToTop" />
+        <div class="flex">
+          <img class="w-full h-auto" src="/img/cards-2.png" alt="card">
         </div>
+        <div class="flex">
+          <img class="w-full h-auto" src="/img/cards-3.png" alt="card">
+        </div>
+        <div class="flex">
+          <img class="w-full h-auto" src="/img/cards-4.png" alt="card">
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col mt-40">
+      <div class="flex items-center justify-between w-full h-16">
+        <div class="text-5xl font-medium text-center">Galxe Campaigns</div>
+        <span class="flex items-center space-x-3">
+          <span class="text-2xl font-semibold text-second-gray">View all</span>
+          <img class="w-6 h-6" src="/img/arrow-right.png" alt="arrow">
+        </span>
+      </div>
+      <div class="flex items-start justify-between mt-10 space-x-6">
+        <img class="w-full h-auto" src="/img/cards-5.png" alt="card">
       </div>
     </div>
     <div class="flex flex-col pb-24 space-y-3 footer mt-60">
