@@ -2,34 +2,23 @@
   <div class="flex flex-col w-content mx-auto pt-9">
     <div class="header h-16 flex justify-between items-center">
       <div class="flex items-center space-x-3">
-        <img src="/img/logo.png" alt="logo" class="h-12" />
-        <img src="/img/logo-title.png" alt="logo" class="h-6 dark:brightness-0 dark:invert" />
+        <img src="/img/logo.png" alt="logo" class="h-9" />
+        <img src="/img/logo-title.png" alt="logo" class="h-5 dark:brightness-0 dark:invert" />
       </div>
-      <div class="links flex items-center space-x-5 text-black-1 dark:text-white font-['Poppins'] text-[17px]">
-        <template v-for="link in links" :key="link">
-          <a v-if="link.url" :href="link.url" class="relative h-7 flex items-center cursor-pointer hover:underline underline-offset-4">
-            <span>{{ link.title }}</span>
-            <img class="w-6 h-6 dark:brightness-0 dark:invert" src="~/assets/svg/down-select.svg" alt="select">
-          </a>
-          <a v-else class="group relative h-7 flex items-center cursor-pointer">
-            <span>{{ link.title }}</span>
-            <img class="w-6 h-6 dark:brightness-0 dark:invert" src="~/assets/svg/down-select.svg" alt="select">
-            <p
-              class="hidden group-hover:flex absolute -bottom-6 left-1/2 -translate-x-1/2 w-32 h-6 rounded-xl bg-[#FFDC02] justify-center items-center text-xs font-['Poppins'] dark:text-black">
-              Coming soon
-            </p>
-          </a>
-        </template>
-        <div class="flex justify-center ml-2" @click="toggleColorMode">
-          <input type="checkbox" name="light-switch" class="light-switch sr-only" />
-          <label
-            class="relative h-[30px] p-[3px] bg-[#F0F2F5] dark:bg-[#2C2C2C] rounded-full after:content-[''] after:transition-transform after:duration-500 after:absolute after:dark:translate-x-full after:w-6 after:h-6 after:p-[6px] after:rounded-full after:bg-gradient-to-r after:from-[#439DFF] after:to-[#6052FF] flex items-center cursor-pointer select-none"
-            for="light-switch">
-            <img class="m-[6px] z-20 w-3 h-3" src="~/assets/svg/light-mode.svg" alt="light-mode">
-            <img class="m-[6px] z-20 w-3 h-3" src="~/assets/svg/dark-mode.svg" alt="dark-mode">
-            <span class="sr-only">Switch to light / dark version</span>
-          </label>
-        </div>
+      <div class="links flex items-center space-x-5 text-black-1 dark:text-white font-['Poppins'] font-bold uppercase text-xs tracking-[1.5px]">
+        <a v-for="link in links" :key="link" class="cursor-pointer hover:underline hover:underline-offset-4 hover:decoration-gradFrom">
+          <span class="hover:bg-gradient-to-r hover:from-gradFrom hover:to-gradTo hover:bg-clip-text hover:text-transparent">{{ link.title }}</span>
+        </a>
+      </div>
+      <div class="flex justify-center ml-2" @click="toggleColorMode">
+        <input type="checkbox" name="light-switch" class="light-switch sr-only" />
+        <label
+          class="relative h-[30px] p-[3px] bg-[#F0F2F5] dark:bg-[#2C2C2C] rounded-full after:content-[''] after:transition-transform after:duration-500 after:absolute after:dark:translate-x-full after:w-6 after:h-6 after:p-[6px] after:rounded-full after:bg-gradient-to-r after:from-[#439DFF] after:to-[#6052FF] flex items-center cursor-pointer select-none"
+          for="light-switch">
+          <img class="m-[6px] z-20 w-3 h-3" src="~/assets/svg/light-mode.svg" alt="light-mode">
+          <img class="m-[6px] z-20 w-3 h-3" src="~/assets/svg/dark-mode.svg" alt="dark-mode">
+          <span class="sr-only">Switch to light / dark version</span>
+        </label>
       </div>
     </div>
     <div class="slogon mt-12 flex justify-between items-center">
@@ -115,19 +104,19 @@
 <script setup>
 const links = [
   {
-    title: 'AI Data Explorer',
+    title: 'Leave a review',
     url: 'https://explorer.movespace.xyz/',
   },
   {
-    title: 'Review & Earn',
+    title: 'Ecosystem',
     url: '',
   },
   {
-    title: 'Label & Earn',
+    title: 'reward profile',
     url: '',
   },
   {
-    title: 'Data Marketplace',
+    title: 'explore',
     url: '',
   },
 ]

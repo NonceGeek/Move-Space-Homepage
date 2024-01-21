@@ -19,6 +19,8 @@ const config: Config = {
         'grdb': '#FF2DF7',
         'grdm': '#5200FF',
         'grde': '#00F0FF',
+        'gradFrom': '#439DFF',
+        'gradTo': '#6052FF',
       },
     },
   },
