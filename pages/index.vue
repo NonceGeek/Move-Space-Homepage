@@ -1,34 +1,37 @@
 <template>
-  <div class="flex flex-col w-content mx-auto pt-9">
-    <div class="header h-16 flex justify-between items-center">
+  <div class="flex flex-col mx-auto w-content pt-9 font-['Poppins']">
+    <div class="flex items-center justify-between h-16 header">
       <div class="flex items-center space-x-3">
         <img src="/img/logo.png" alt="logo" class="h-9" />
         <img src="/img/logo-title.png" alt="logo" class="h-5 dark:brightness-0 dark:invert" />
       </div>
-      <div class="links flex items-center space-x-5 text-black-1 dark:text-white font-['Poppins'] font-bold uppercase text-xs tracking-[1.5px]">
+      <div class="links flex items-center space-x-5 text-black-1 dark:text-white font-bold uppercase text-xs tracking-[1.5px]">
         <a v-for="link in links" :key="link" class="cursor-pointer hover:underline hover:underline-offset-4 hover:decoration-gradFrom">
           <span class="hover:bg-gradient-to-r hover:from-gradFrom hover:to-gradTo hover:bg-clip-text hover:text-transparent">{{ link.title }}</span>
         </a>
       </div>
-      <div class="flex justify-center ml-2" @click="toggleColorMode">
-        <input type="checkbox" name="light-switch" class="light-switch sr-only" />
-        <label
-          class="relative h-[30px] p-[3px] bg-[#F0F2F5] dark:bg-[#2C2C2C] rounded-full after:content-[''] after:transition-transform after:duration-500 after:absolute after:dark:translate-x-full after:w-6 after:h-6 after:p-[6px] after:rounded-full after:bg-gradient-to-r after:from-[#439DFF] after:to-[#6052FF] flex items-center cursor-pointer select-none"
-          for="light-switch">
-          <img class="m-[6px] z-20 w-3 h-3" src="~/assets/svg/light-mode.svg" alt="light-mode">
-          <img class="m-[6px] z-20 w-3 h-3" src="~/assets/svg/dark-mode.svg" alt="dark-mode">
-          <span class="sr-only">Switch to light / dark version</span>
-        </label>
+      <div class="flex items-center space-x-8">
+        <div id="connect" class="flex items-center px-4 py-2 font-semibold text-white rounded-full h-11 bg-gradient-to-r from-gradFrom to-gradTo">Connect wallet</div>
+        <div class="flex justify-center ml-2" @click="toggleColorMode">
+          <input type="checkbox" name="light-switch" class="sr-only light-switch" />
+          <label
+            class="relative h-[30px] p-[3px] bg-[#F0F2F5] dark:bg-[#2C2C2C] rounded-full after:content-[''] after:transition-transform after:duration-500 after:absolute after:dark:translate-x-full after:w-6 after:h-6 after:p-[6px] after:rounded-full after:bg-gradient-to-r after:from-[#439DFF] after:to-[#6052FF] flex items-center cursor-pointer select-none"
+            for="light-switch">
+            <img class="m-[6px] z-20 w-3 h-3" src="~/assets/svg/light-mode.svg" alt="light-mode">
+            <img class="m-[6px] z-20 w-3 h-3" src="~/assets/svg/dark-mode.svg" alt="dark-mode">
+            <span class="sr-only">Switch to light / dark version</span>
+          </label>
+        </div>
       </div>
     </div>
-    <div class="slogon mt-12 flex justify-between items-center">
+    <div class="flex items-center justify-between mt-12 slogon">
       <div class="flex flex-col space-y-12">
-        <div class="texts flex flex-col space-y-6">
-          <div class="titles flex flex-col space-y-9">
+        <div class="flex flex-col space-y-6 texts">
+          <div class="flex flex-col titles space-y-9">
             <div class="flex flex-col space-y-4 text-black-1 dark:text-white">
-              <span class="w-[450px] text-[72px] leading-none font-['Poppins'] font-medium tracking-[0.6px]">Web 3 AI
+              <span class="w-[450px] text-[72px] leading-none font-medium tracking-[0.6px]">Web 3 AI
                 Powerhouse</span>
-              <span class="w-[510px] text-[36px] leading-tight font-['Poppins']">For Search, AIGC, Data
+              <span class="w-[510px] text-[36px] leading-tight">For Search, AIGC, Data
                 Marketplace, and Apps</span>
             </div>
             <LinearLine classText="w-[615px]" />
@@ -38,7 +41,7 @@
             <img class="w-8 h-8" src="/img/logo-bnb.png" alt="bnb">
           </div>
         </div>
-        <div class="buttons flex items-center space-x-8">
+        <div class="flex items-center space-x-8 buttons">
           <template v-for="button in buttons" :key="button">
             <TheButton :text="button.text" :uppercase="true" :high="true" :colored-border="button.coloredBorder"
               :change-text="true" />
@@ -50,13 +53,13 @@
     <div class="mt-[72px]">
       <img class="mx-auto h-[30px] dark:brightness-0 dark:invert" src="/img/clients.png" alt="clients">
     </div>
-    <div class="mt-[26px] text-center text-third-gray dark:text-gray-5 text-[20px] font-['Poppins']">
+    <div class="mt-[26px] text-center text-third-gray dark:text-gray-5 text-[20px]">
       Trusted by and integrated with the world’s most ambitious teams
     </div>
     <div class="mt-40 mx-auto w-[1160px] flex flex-col items-center space-y-[142px]">
-      <div class="w-full flex justify-start items-center space-x-60">
+      <div class="flex items-center justify-start w-full space-x-60">
         <div class="w-[555px] flex flex-col space-y-6 items-start">
-          <div class="w-full flex flex-col space-y-2 text-[20px] text-second-gray dark:text-white font-['Poppins']">
+          <div class="w-full flex flex-col space-y-2 text-[20px] text-second-gray dark:text-white">
             <span>MOVESPACE is a Web 3 AI Powerhouse. We utilize
               decentralized storage solutions including BNB Greenfield and Arweave to power on-chain data labeling, data
               monetization, AI-powered search, AIGC & AI-based UGC, NFT, and gaming use cases.</span>
@@ -68,10 +71,10 @@
           </div>
           <TheButton text="Learn more" :colored-border="true" @click="scrollToTop" />
         </div>
-        <div class="title text-black-2 dark:text-white text-[40px] font-['Poppins'] font-semibold">ABOUT US</div>
+        <div class="title text-black-2 dark:text-white text-[40px] font-semibold">ABOUT US</div>
       </div>
-      <div class="w-full flex justify-start items-center space-x-60">
-        <div class="title w-[555px] text-black-2 dark:text-white text-[40px] font-['Poppins'] font-semibold">APPLICATIONS
+      <div class="flex items-center justify-start w-full space-x-60">
+        <div class="title w-[555px] text-black-2 dark:text-white text-[40px] font-semibold">APPLICATIONS
         </div>
         <div class="w-[555px] flex flex-col space-y-6 items-start">
           <div class="w-full flex flex-col space-y-2 text-[20px] text-second-gray dark:text-white">
@@ -92,7 +95,7 @@
         </div>
       </div>
     </div>
-    <div class="footer mt-60 pb-24 flex flex-col space-y-3">
+    <div class="flex flex-col pb-24 space-y-3 footer mt-60">
       <LinearLine />
       <div class="flex justify-between items-center text-third-gray dark:text-white font-['Montserrat']">
         <span v-for="text in footerTexts" :key="text">{{ text }}</span>

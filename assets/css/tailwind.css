@@ -4,12 +4,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
-.thin-font {
-    font-weight: 300; /* This sets the regular font to a thinner weight */
-}
-
-.thin-font b {
-    font-weight: bold; 
-}
