@@ -1,11 +1,11 @@
 <template>
   <div class="flex flex-col mx-auto w-content pt-9 font-['Poppins']">
-    <div class="flex items-center justify-between h-16 header">
+    <div id="header" class="flex items-center justify-between h-16">
       <div class="flex items-center space-x-3">
         <img src="/img/logo.png" alt="logo" class="h-9" />
         <img src="/img/logo-title.png" alt="logo" class="h-5 dark:brightness-0 dark:invert" />
       </div>
-      <div class="links flex items-center space-x-5 text-black-1 dark:text-white font-bold uppercase text-xs tracking-[1.5px]">
+      <div id="links" class="flex items-center space-x-5 text-black-1 dark:text-white font-bold uppercase text-xs tracking-[1.5px]">
         <a v-for="link in links" :key="link" class="cursor-pointer hover:underline hover:underline-offset-4 hover:decoration-gradFrom">
           <span class="hover:bg-gradient-to-r hover:from-gradFrom hover:to-gradTo hover:bg-clip-text hover:text-transparent">{{ link.title }}</span>
         </a>
@@ -24,37 +24,25 @@
         </div>
       </div>
     </div>
-    <div class="flex items-center justify-between mt-12 slogon">
-      <div class="flex flex-col space-y-12">
-        <div class="flex flex-col space-y-6 texts">
+    <div id="banner" class="flex items-center justify-between mt-20">
+      <div id="banner-left" class="flex flex-col items-start space-y-8 w-[730px]">
+        <div class="flex flex-col space-y-6">
           <div class="flex flex-col titles space-y-9">
-            <div class="flex flex-col space-y-4 text-black-1 dark:text-white">
-              <span class="w-[450px] text-[72px] leading-none font-medium tracking-[0.6px]">Web 3 AI
-                Powerhouse</span>
-              <span class="w-[510px] text-[36px] leading-tight">For Search, AIGC, Data
-                Marketplace, and Apps</span>
+            <div class="text-[68px] font-black tracking-tighter leading-none whitespace-pre-wrap text-black-1 dark:text-white">
+              <span>Earn</span>
+              <span class="text-transparent bg-gradient-to-r from-gradFrom to-gradTo bg-clip-text"> rewards </span>
+              <span>by leaving a review for your favorite NFTs, campaigns, spaces, & community</span>
             </div>
             <LinearLine classText="w-[615px]" />
           </div>
-          <div class="flex items-center space-x-2 text-third-gray dark:text-gray-4 text-[21px]">
-            <span class="leading-8">Powered by BNB Greenfield</span>
+          <div class="flex items-center space-x-2 text-third-gray dark:text-gray-4">
             <img class="w-8 h-8" src="/img/logo-bnb.png" alt="bnb">
+            <span class="text-2xl font-semibold leading-8">Powered by Al, BNB Greenfield, & opBNB</span>
           </div>
         </div>
-        <div class="flex items-center space-x-8 buttons">
-          <template v-for="button in buttons" :key="button">
-            <TheButton :text="button.text" :uppercase="true" :high="true" :colored-border="button.coloredBorder"
-              :change-text="true" />
-          </template>
-        </div>
+        <span class="flex items-center px-8 py-4 text-2xl font-semibold text-white rounded-full bg-gradient-to-r from-gradFrom to-gradTo">Leave a review & earn now</span>
       </div>
-      <img class="w-[568px]" src="/img/dataism.png" alt="dataism">
-    </div>
-    <div class="mt-[72px]">
-      <img class="mx-auto h-[30px] dark:brightness-0 dark:invert" src="/img/clients.png" alt="clients">
-    </div>
-    <div class="mt-[26px] text-center text-third-gray dark:text-gray-5 text-[20px]">
-      Trusted by and integrated with the world’s most ambitious teams
+      <img id="banner-right" class="w-[454px]" src="/img/cards.png" alt="cards">
     </div>
     <div class="mt-40 mx-auto w-[1160px] flex flex-col items-center space-y-[142px]">
       <div class="flex items-center justify-start w-full space-x-60">
