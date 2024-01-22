@@ -56,7 +56,10 @@
     <div id="nfts" class="flex flex-col mt-40">
       <div class="w-full text-5xl font-medium text-center">Trending</div>
       <div class="flex items-center justify-between w-full h-16 pt-6 text-gray-2">
-        <span class="text-3xl font-medium">NFPrompt NFTs</span>
+        <span class="flex items-center space-x-3">
+          <img class="w-[30px]" src="/img/nfprompt.png" alt="logo">
+          <span class="text-3xl font-medium">NFPrompt NFTs</span>
+        </span>
         <span class="flex items-center space-x-3">
           <span class="text-2xl font-semibold">View all</span>
           <img class="w-6 h-6" src="/img/arrow-right.png" alt="arrow">
