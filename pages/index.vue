@@ -122,20 +122,6 @@ const links = [
     url: '',
   },
 ]
-const buttons = [
-  {
-    text: 'testnet',
-    coloredBorder: true,
-  },
-  {
-    text: 'read docs',
-    coloredBorder: false,
-  },
-]
-const footerTexts = [
-  '𑖌𑖼Copyright © 2023 MOVESPACE. All rights reserved.𑖌𑖼',
-  'Terms of Use & Privacy Policy',
-]
 
 const colorMode = useColorMode('dark');
 const toggleColorMode = () => {
@@ -144,13 +130,6 @@ const toggleColorMode = () => {
   } else {
     colorMode.preference = 'dark'
   }
-}
-
-const scrollToTop = () => {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth',
-  })
 }
 </script>
 
