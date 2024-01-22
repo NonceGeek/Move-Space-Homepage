@@ -116,16 +116,49 @@
         </div>
       </div>
     </div>
-    <div class="flex flex-col mt-40">
+    <div id="campaigns" class="flex flex-col mt-40">
       <div class="flex items-center justify-between w-full h-16">
-        <div class="text-5xl font-medium text-center">Galxe Campaigns</div>
+        <div class="flex items-center space-x-3">
+          <img class="w-10 h-10" src="/img/galxe.png" alt="galxe">
+          <span class="text-5xl font-medium text-center">Galxe Campaigns</span>
+        </div>
         <span class="flex items-center space-x-3">
           <span class="text-2xl font-semibold text-gray-2">View all</span>
           <img class="w-6 h-6" src="/img/arrow-right.png" alt="arrow">
         </span>
       </div>
-      <div class="flex items-start justify-between mt-10 space-x-6">
-        <img class="w-full h-auto" src="/img/cards-5.png" alt="card">
+      <div class="flex items-start justify-between mt-10 space-x-32">
+        <div v-for="(campaign, i) in campaigns" :key="i" class="flex flex-col w-full space-y-6">
+          <div class="p-4 bg-black-1 rounded-xl">
+            <div class="w-full px-3 py-2 font-medium text-white rounded-md bg-blue-1 text-xxs">
+              Journey through the trail less travelled to join the Bera Bridge and let the Honey flow
+            </div>
+            <div class="flex items-center justify-between mt-3">
+              <div class="flex items-center space-x-1">
+                <span v-for="(tag, j) in campaign.tags" :key="j"
+                  class="px-2 py-1 font-medium text-white border border-white rounded-full text-xxs">{{ tag }}</span>
+              </div>
+              <img class="w-4 h-4" src="/img/filter.png" alt="filter">
+            </div>
+            <div class="flex justify-between mt-3">
+              <div class="flex flex-col justify-between">
+                <span class="font-semibold text-white text-xxs">{{ campaign.name }}</span>
+                <div class="flex items-center space-x-2">
+                  <img class="w-5 h-5" :src=campaign.avatar alt="avatar">
+                  <span class="font-semibold text-white text-xxs">{{ campaign.chain }}</span>
+                </div>
+              </div>
+              <img class="w-32" :src=campaign.bannerImg alt="banner">
+            </div>
+          </div>
+          <div class="flex flex-col space-y-3">
+            <div class="flex flex-col space-y-3 text-gray-2">
+              <span class="font-semibold">{{ campaign.title }}</span>
+              <span>★★★★★</span>
+            </div>
+            <span class="text-gray-3">{{ campaign.intro }}</span>
+          </div>
+        </div>
       </div>
     </div>
     <div class="flex flex-col pb-24 space-y-9 footer mt-60">
@@ -214,6 +247,36 @@ const nfts = [
     likes: 789,
     comments: 930,
     star: 5,
+  },
+]
+
+const campaigns = [
+  {
+    name: 'March of the Bears',
+    tags: ['Co-host', 'NFT'],
+    bannerImg: '/img/campaign-1.png',
+    avatar: '/img/avatar-5.png',
+    chain: 'Berachain',
+    title: 'Cafe Kool',
+    intro: 'Great variety of art from Chinese to Indian',
+  },
+  {
+    name: 'March of the Bears',
+    tags: ['Co-host', 'NFT'],
+    bannerImg: '/img/campaign-2.png',
+    avatar: '/img/avatar-6.png',
+    chain: 'Berachain',
+    title: 'Cafe Kool',
+    intro: 'Great variety of art from Chinese to Indian',
+  },
+  {
+    name: 'March of the Bears',
+    tags: ['Co-host', 'NFT'],
+    bannerImg: '/img/campaign-3.png',
+    avatar: '/img/avatar-7.png',
+    chain: 'Berachain',
+    title: 'Cafe Kool',
+    intro: 'Great variety of art from Chinese to Indian',
   },
 ]
 
