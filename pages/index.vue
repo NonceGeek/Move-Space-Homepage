@@ -58,10 +58,10 @@
       <div class="flex items-center justify-between w-full h-16 pt-6 text-gray-2">
         <span class="flex items-center space-x-3">
           <img class="w-[30px]" src="/img/nfprompt.png" alt="logo">
-          <span class="text-3xl font-medium">NFPrompt NFTs</span>
+          <span class="text-3xl font-medium dark:text-gray-7">NFPrompt NFTs</span>
         </span>
         <span class="flex items-center space-x-3">
-          <span class="text-2xl font-semibold">View all</span>
+          <span class="text-2xl font-semibold dark:text-gray-6">View all</span>
           <img class="w-6 h-6" src="/img/arrow-right.png" alt="arrow">
         </span>
       </div>
@@ -108,10 +108,10 @@
           </div>
           <div class="flex flex-col space-y-3">
             <div class="flex flex-col space-y-3 text-gray-2">
-              <span class="font-semibold">{{ nft.title }}</span>
-              <span>★★★★★</span>
+              <span class="font-semibold dark:text-white">{{ nft.title }}</span>
+              <span class="dark:text-white">★★★★★</span>
             </div>
-            <span class="text-gray-3">{{ nft.intro }}</span>
+            <span class="text-gray-3 dark:text-gray-4">{{ nft.intro }}</span>
           </div>
         </div>
       </div>
@@ -120,10 +120,10 @@
       <div class="flex items-center justify-between w-full h-16">
         <div class="flex items-center space-x-3">
           <img class="w-10 h-10" src="/img/galxe.png" alt="galxe">
-          <span class="text-5xl font-medium text-center">Galxe Campaigns</span>
+          <span class="text-5xl font-medium text-center dark:text-white">Galxe Campaigns</span>
         </div>
         <span class="flex items-center space-x-3">
-          <span class="text-2xl font-semibold text-gray-2">View all</span>
+          <span class="text-2xl font-semibold text-gray-2 dark:text-gray-6">View all</span>
           <img class="w-6 h-6" src="/img/arrow-right.png" alt="arrow">
         </span>
       </div>
@@ -152,11 +152,11 @@
             </div>
           </div>
           <div class="flex flex-col space-y-3">
-            <div class="flex flex-col space-y-3 text-gray-2">
+            <div class="flex flex-col space-y-3 text-gray-2 dark:text-white">
               <span class="font-semibold">{{ campaign.title }}</span>
               <span>★★★★★</span>
             </div>
-            <span class="text-gray-3">{{ campaign.intro }}</span>
+            <span class="text-gray-3 dark:text-gray-4">{{ campaign.intro }}</span>
           </div>
         </div>
       </div>
