@@ -47,9 +47,9 @@
             <span class="text-2xl font-semibold leading-8">Powered by Al, BNB Greenfield, & opBNB</span>
           </div>
         </div>
-        <span
-          class="flex items-center px-8 py-4 text-2xl font-semibold text-white rounded-full bg-gradient-to-r from-gradFrom to-gradTo">Leave
-          a review & earn now</span>
+        <a href="#nfts"
+          class="flex items-center px-8 py-4 text-2xl font-semibold text-white rounded-full cursor-pointer bg-gradient-to-r from-gradFrom to-gradTo">Leave
+          a review & earn now</a>
       </div>
       <img id="banner-right" class="w-[454px]" src="/img/cards.png" alt="cards">
     </div>
