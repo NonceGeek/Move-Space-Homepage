@@ -54,7 +54,7 @@
       <img id="banner-right" class="w-[454px]" src="/img/cards.png" alt="cards">
     </div>
     <div id="nfts" class="flex flex-col mt-40">
-      <div class="w-full text-5xl font-medium text-center">Trending</div>
+      <div class="w-full text-5xl font-medium text-center dark:text-white">Trending</div>
       <div class="flex items-center justify-between w-full h-16 pt-6 text-gray-2">
         <span class="flex items-center space-x-3">
           <img class="w-[30px]" src="/img/nfprompt.png" alt="logo">
