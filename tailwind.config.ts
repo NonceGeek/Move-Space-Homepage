@@ -20,6 +20,7 @@ const config: Config = {
         'gray-5': '#CECECE',
         'gray-6': '#D7D7D7',
         'gray-7': '#E2E2E2',
+        'gray-8': '#BCBCBC',
         'blue-1': '#0075FF',
         'grdb': '#FF2DF7',
         'grdm': '#5200FF',

@@ -6,7 +6,7 @@
         <img src="/img/logo-title.png" alt="logo" class="h-5 dark:brightness-0 dark:invert" />
       </div>
       <div id="links"
-        class="flex items-center space-x-5 text-black-1 dark:text-white font-bold uppercase text-xs tracking-[1.5px]">
+        class="flex items-center space-x-5 text-black-1 dark:text-gray-8 font-bold uppercase text-xs tracking-[1.5px]">
         <a v-for="link in links" :key="link"
           class="cursor-pointer hover:underline hover:underline-offset-4 hover:decoration-gradFrom">
           <span
@@ -62,7 +62,7 @@
         </span>
         <span class="flex items-center space-x-3">
           <span class="text-2xl font-semibold dark:text-gray-6">View all</span>
-          <img class="w-6 h-6" src="/img/arrow-right.png" alt="arrow">
+          <SvgArrow colorMode={colorMode.preference} />
         </span>
       </div>
       <div class="flex items-start justify-between mt-10 space-x-6">
@@ -124,7 +124,7 @@
         </div>
         <span class="flex items-center space-x-3">
           <span class="text-2xl font-semibold text-gray-2 dark:text-gray-6">View all</span>
-          <img class="w-6 h-6" src="/img/arrow-right.png" alt="arrow">
+          <SvgArrow colorMode={colorMode.preference} />
         </span>
       </div>
       <div class="flex items-start justify-between mt-10 space-x-32">
