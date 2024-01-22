@@ -119,7 +119,7 @@
     <div id="campaigns" class="flex flex-col mt-40">
       <div class="flex items-center justify-between w-full h-16">
         <div class="flex items-center space-x-3">
-          <img class="w-10 h-10" src="/img/galxe.png" alt="galxe">
+          <SvgGalxe :colorMode="colorMode.preference" />
           <span class="text-5xl font-medium text-center dark:text-white">Galxe Campaigns</span>
         </div>
         <span class="flex items-center space-x-3">
