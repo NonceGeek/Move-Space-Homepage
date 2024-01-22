@@ -7,14 +7,18 @@ const config: Config = {
       width: {
         'content': '1280px',
       },
+      fontSize: {
+        'xxs': '10px',
+      },
       colors: {
         'black-1': '#1E1E2D',
-        'navig1': '#CFCFCF',
-        'second-gray': '#727272',
         'black-2': '#262626',
-        'third-gray': '#858585',
+        'navig1': '#CFCFCF',
+        'gray-2': '#727272',
+        'gray-3': '#858585',
         'gray-4': '#C4C4C4',
         'gray-5': '#CECECE',
+        'gray-6': '#D7D7D7',
         'blue-1': '#0075FF',
         'grdb': '#FF2DF7',
         'grdm': '#5200FF',

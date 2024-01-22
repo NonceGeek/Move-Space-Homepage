@@ -42,7 +42,7 @@
             </div>
             <LinearLine classText="w-[615px]" />
           </div>
-          <div class="flex items-center space-x-2 text-third-gray dark:text-gray-4">
+          <div class="flex items-center space-x-2 text-gray-3 dark:text-gray-4">
             <img class="w-8 h-8" src="/img/logo-bnb.png" alt="bnb">
             <span class="text-2xl font-semibold leading-8">Powered by Al, BNB Greenfield, & opBNB</span>
           </div>
@@ -53,9 +53,9 @@
       </div>
       <img id="banner-right" class="w-[454px]" src="/img/cards.png" alt="cards">
     </div>
-    <div class="flex flex-col mt-40">
+    <div id="nfts" class="flex flex-col mt-40">
       <div class="w-full text-5xl font-medium text-center">Trending</div>
-      <div class="flex items-center justify-between w-full h-16 pt-6 text-second-gray">
+      <div class="flex items-center justify-between w-full h-16 pt-6 text-gray-2">
         <span class="text-3xl font-medium">NFPrompt NFTs</span>
         <span class="flex items-center space-x-3">
           <span class="text-2xl font-semibold">View all</span>
@@ -63,17 +63,53 @@
         </span>
       </div>
       <div class="flex items-start justify-between mt-10 space-x-6">
-        <div class="flex">
-          <img class="w-full h-auto" src="/img/cards-1.png" alt="card">
-        </div>
-        <div class="flex">
-          <img class="w-full h-auto" src="/img/cards-2.png" alt="card">
-        </div>
-        <div class="flex">
-          <img class="w-full h-auto" src="/img/cards-3.png" alt="card">
-        </div>
-        <div class="flex">
-          <img class="w-full h-auto" src="/img/cards-4.png" alt="card">
+        <div class="flex flex-col w-full space-y-6" v-for="(nft, i) in nfts" :key="i">
+          <div class="relative overflow-hidden rounded-xl">
+            <img class="w-full h-auto" :src=nft.bgImg alt="card">
+            <div class="absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-between">
+              <div class="flex items-center justify-end pt-3 pr-3 space-x-1">
+                <span
+                  class="flex items-center space-x-0.5 px-1.5 py-1 rounded-full bg-gradient-to-r from-gradFrom to-gradTo">
+                  <img class="w-2 h-2" src="/img/fire.png" alt="fire">
+                  <span class="text-white uppercase text-xxs">{{ nft.popularity }}</span>
+                </span>
+                <span class="relative flex items-center justify-center overflow-hidden rounded-full">
+                  <span class="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-r from-gradFrom to-gradTo"></span>
+                  <span
+                    class="box-border z-10 flex items-center justify-center px-1 py-0.5 w-full h-full space-x-1 text-white border-2 border-transparent rounded-full select-none text-xxs bg-clip-padding bg-black-1 dark:bg-dark">
+                    <img class="w-2 h-2" src="/img/logo-bnb.png" alt="logo">
+                    <span>{{ nft.chain }}</span>
+                  </span>
+                </span>
+              </div>
+              <div class="flex items-end justify-between w-full h-[72px] px-3 pb-6 backdrop-blur">
+                <div class="flex space-x-2">
+                  <img class="w-9 h-9" :src=nft.avatar alt="avatar">
+                  <div class="flex flex-col space-y-1 text-xxs">
+                    <span class="text-white">{{ nft.addr }}</span>
+                    <span class="text-gray-6">Price: {{ nft.price }}</span>
+                  </div>
+                </div>
+                <div class="flex space-x-1 text-white text-xxs">
+                  <span class="flex space-x-1">
+                    <img class="w-4 h-4" src="/img/like.png" alt="like">
+                    <span>{{ nft.likes }}</span>
+                  </span>
+                  <span class="flex space-x-1">
+                    <img class="w-4 h-4" src="/img/comment.png" alt="comment">
+                    <span>{{ nft.comments }}</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col space-y-3">
+            <div class="flex flex-col space-y-3 text-gray-2">
+              <span class="font-semibold">{{ nft.title }}</span>
+              <span>★★★★★</span>
+            </div>
+            <span class="text-gray-3">{{ nft.intro }}</span>
+          </div>
         </div>
       </div>
     </div>
@@ -81,7 +117,7 @@
       <div class="flex items-center justify-between w-full h-16">
         <div class="text-5xl font-medium text-center">Galxe Campaigns</div>
         <span class="flex items-center space-x-3">
-          <span class="text-2xl font-semibold text-second-gray">View all</span>
+          <span class="text-2xl font-semibold text-gray-2">View all</span>
           <img class="w-6 h-6" src="/img/arrow-right.png" alt="arrow">
         </span>
       </div>
@@ -97,7 +133,7 @@
           <img class="w-8 h-8" src="/img/Facebook.png" alt="fb">
           <img class="w-8 h-8" src="/img/Twitter.png" alt="twt">
         </div>
-        <span class="text-2xl text-third-gray">Copyright 2024 MoveSpace</span>
+        <span class="text-2xl text-gray-3">Copyright 2024 MoveSpace</span>
       </div>
     </div>
   </div>
@@ -123,7 +159,62 @@ const links = [
   },
 ]
 
-const colorMode = useColorMode('dark');
+const nfts = [
+  {
+    title: 'Cafe Kool',
+    chain: 'BNB Chain',
+    addr: '0Xf136...4571',
+    price: '0.5 BNB',
+    intro: 'Great variety of art from Chinese to Indian',
+    bgImg: '/img/cards-1.png',
+    avatar: '/img/avatar-1.png',
+    popularity: '9.2 k',
+    likes: 789,
+    comments: 930,
+    star: 5,
+  },
+  {
+    title: 'Cafe Kool',
+    chain: 'BNB Chain',
+    addr: '0Xf136...4571',
+    price: '0.5 BNB',
+    intro: 'Great variety of art from Chinese to Indian',
+    bgImg: '/img/cards-2.png',
+    avatar: '/img/avatar-2.png',
+    popularity: '9.2 k',
+    likes: 789,
+    comments: 930,
+    star: 5,
+  },
+  {
+    title: 'Cafe Kool',
+    chain: 'BNB Chain',
+    addr: '0Xf136...4571',
+    price: '0.5 BNB',
+    intro: 'Great variety of art from Chinese to Indian',
+    bgImg: '/img/cards-3.png',
+    avatar: '/img/avatar-3.png',
+    popularity: '9.2 k',
+    likes: 789,
+    comments: 930,
+    star: 5,
+  },
+  {
+    title: 'Cafe Kool',
+    chain: 'BNB Chain',
+    addr: '0Xf136...4571',
+    price: '0.5 BNB',
+    intro: 'Great variety of art from Chinese to Indian',
+    bgImg: '/img/cards-4.png',
+    avatar: '/img/avatar-4.png',
+    popularity: '9.2 k',
+    likes: 789,
+    comments: 930,
+    star: 5,
+  },
+]
+
+const colorMode = useColorMode('dark')
 const toggleColorMode = () => {
   if (colorMode.preference === 'dark') {
     colorMode.preference = 'light'
@@ -132,5 +223,3 @@ const toggleColorMode = () => {
   }
 }
 </script>
-
-<style scoped></style>
